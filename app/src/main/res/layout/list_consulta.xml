@@ -22,20 +22,21 @@
 	       <RelativeLayout 
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"  
-	            android:layout_alignParentRight="true">
+	            android:layout_alignParentRight="true"
+			    android:layout_toRightOf="@+id/pan">
 	            
-		       <TextView android:id="@+id/monto" 
+		       <TextView android:id="@+id/monto"
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
 		    		android:layout_centerVertical="true"
 		           	android:includeFontPadding="false"
-		           	android:layout_toRightOf="@+id/pan"
 	   				android:textSize="22sp"
 		            android:gravity="right"
 	    			android:textStyle="bold"
 		            android:textColor="#545454"/>
 		       
-		       <ImageView android:id="@+id/transactionStatus" 
+		       <ImageView
+				   android:id="@+id/transactionStatus"
 		            android:layout_width="20dp"
 		            android:layout_height="20dp"
 		            android:layout_marginLeft="5dp"
