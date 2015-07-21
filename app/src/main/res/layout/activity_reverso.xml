@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ReversoActivity" 
+	android:background="#FFFFFF">
+    
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+ 	android:id="@+id/backgroundReverso"
+	android:background="@color/blue"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+    	android:id="@+id/top_header"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:orientation="vertical"
+    	android:background="@drawable/header_tabs"
+      	android:padding="10sp" >
+	    		
+		<TextView
+			android:textColor="#FFFFFF"
+			android:layout_centerInParent="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textSize="25sp"
+    		android:textStyle="bold"
+			android:text="Reverso"  />
+			
+		<Button
+    		android:id="@+id/atrasReversarButton"
+		    android:layout_alignParentLeft="true" 
+	     	android:background="@drawable/button_tab_header"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+		 	android:textColor="#FFFFFF"
+			android:textSize="15sp"
+		   	android:text="Atras"  />
+	
+	</RelativeLayout> 
+       
+ 	<LinearLayout
+	    android:id="@+id/reversoMensajeLayout"
+    	android:layout_width="match_parent"
+ 		android:layout_height="match_parent"  
+ 		android:visibility="gone"
+ 		android:layout_marginTop="-20dp"
+		android:gravity="center_horizontal|center_vertical"
+     	android:padding="20dip"
+ 		android:orientation="vertical">
+       
+	    		
+		<TextView
+	    	android:id="@+id/reversoMensaje"
+			android:textColor="@color/black"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+		 	android:gravity="center_horizontal|center_vertical"
+    		android:textStyle="bold"
+			android:textSize="25sp" />
+	</LinearLayout>
+	
+ 	<LinearLayout
+	    android:id="@+id/reversoLayout"
+    	android:layout_width="match_parent"
+ 		android:layout_height="match_parent"  
+ 		android:layout_marginTop="-20dp"
+		android:gravity="center_horizontal|center_vertical"
+     	android:padding="20dip"
+ 		android:orientation="vertical">
+	    		
+		<TextView
+			android:textColor="#545454"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textSize="35sp"
+	    	android:textStyle="bold"
+	    	android:layout_marginBottom="20dip"
+			android:text="Última Transacción" />
+		
+	 	<RelativeLayout
+	    	android:layout_width="wrap_content"
+	 		android:layout_height="wrap_content"    
+	    	android:background="@drawable/reverso_box"
+	     	android:padding="20dip" >
+	 				
+			<TextView
+	    		android:id="@+id/panReverso"
+				android:textColor="#545454"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:textSize="25sp"
+		    	android:textStyle="bold" />
+		    		
+			<TextView
+			 	android:id="@+id/referenciaReverso"
+			 	android:layout_below="@+id/panReverso"
+				android:textColor="#545454"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		    		
+			<TextView
+			 	android:id="@+id/fechaReverso"
+			 	android:layout_below="@+id/referenciaReverso"
+				android:textColor="#545454"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		    		
+			<TextView
+			 	android:id="@+id/horaReverso"
+			 	android:layout_below="@+id/fechaReverso"
+				android:textColor="#545454"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" /> 
+		    		
+			<TextView
+	    		android:id="@+id/montoReverso"
+	    		android:layout_below="@+id/horaReverso"
+	    		android:layout_centerInParent="true"
+				android:textColor="#545454"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:textSize="30sp"
+		    	android:textStyle="bold" />
+			
+		    <Button
+	    		android:id="@+id/reversarButton"
+	        	android:background="@drawable/button_reversar"
+	    		android:layout_below="@+id/montoReverso"
+	    		android:layout_centerInParent="true"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:textColor="#FFFFFF"
+				android:textSize="20sp"
+		        android:text="Reversar"  />
+		    
+		</RelativeLayout>
+		
+	</LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

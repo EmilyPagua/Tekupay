@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#525252</color>
+    <color name="blue">#00326A</color>
+    <color name="andresblue">#00336B</color>
+    <color name="lightblue">#B7CEE3</color>
+    <color name="lightbluedivisor">#9CB8D1</color>
+    <color name="lightblack">#DEDFDF</color>
+    <color name="lightblackdivisor">#E5E5E5</color>
+</resources>

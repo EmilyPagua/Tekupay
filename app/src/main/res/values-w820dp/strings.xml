@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pago</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_connect_device">ConnectDevice</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_personal_id">PersonalIDActivity</string>
+    <string name="title_activity_pin">PinActivity</string>
+    <string name="title_activity_signature">SignatureActivity</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="title_activity_main_tab">MainTabActivity</string>
+
+    <string name="title_activity_pago">PagoActivity</string>
+    <string name="title_activity_consulta">ConsultaActivity</string>
+    <string name="title_activity_reverso">ReversoActivity</string>
+    <string name="title_activity_cierre">CierreActivity</string>
+    <string name="title_activity_operaciones">OperacionesActivity</string>
+    <string name="title_activity_info">InfoActivity</string>
+
+</resources>

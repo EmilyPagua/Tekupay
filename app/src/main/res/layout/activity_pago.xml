@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".PagoActivity"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+	<LinearLayout
+    	android:id="@+id/top_header"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+     	android:gravity="center_horizontal"
+    	android:orientation="vertical"
+   		android:background="@drawable/header_tabs"
+      	android:padding="10dip" >
+	    		
+		<TextView
+			android:textColor="#FFFFFF"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+		 	android:gravity="center_horizontal|center_vertical"
+			android:textSize="25sp"
+    		android:textStyle="bold"
+			android:text="Transacciones"  />
+	
+	</LinearLayout> 
+
+	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+		android:gravity="center_horizontal|center_vertical" 
+    	android:orientation="vertical" > 
+    	
+		<ImageView   
+		    android:layout_marginTop="60dp"
+			android:layout_width="wrap_content"
+			android:layout_height="90dp" 
+			android:src="@drawable/tarjeta" 
+		    android:layout_marginBottom="20dp" />
+	    		
+		<TextView
+			android:textColor="@color/black"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		 	android:gravity="center_horizontal|center_vertical"
+			android:textSize="20dp"
+    		android:textStyle="bold"
+			android:text="Cómo funciona?" 
+		    android:layout_marginBottom="10dp"  />
+	    		
+		<TextView
+			android:textColor="@color/black"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		 	android:gravity="center_horizontal|center_vertical"
+			android:textSize="15dp" 
+			android:text="Conecte el lector, inserte la tarjeta e ingrese los datos para completar su transacción." 
+		    android:layout_marginBottom="20dp"  />
+			
+		<Button
+	    	android:id="@+id/continuarTransaccionButton"
+	      	android:background="@drawable/button_reversar"
+		  	android:layout_width="wrap_content"
+		   	android:layout_height="wrap_content" 
+		  	android:textColor="#FFFFFF"
+			android:textSize="16dp"
+		  	android:text="Continuar"  />
+	
+	</LinearLayout>  
+
+</LinearLayout>

@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ConsultaActivity"  
+	android:background="#FFFFFF"
+    android:orientation="vertical">
+
+	<RelativeLayout
+    	android:id="@+id/top_header"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:orientation="vertical"
+    	android:background="@drawable/header_tabs"
+      	android:padding="10sp" >
+	    		
+		<TextView
+			android:textColor="#FFFFFF"
+			android:layout_centerInParent="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textSize="25sp"
+    		android:textStyle="bold"
+			android:text="Consulta"  />
+			
+		<Button
+    		android:id="@+id/atrasConsultarButton"
+		    android:layout_alignParentLeft="true" 
+	     	android:background="@drawable/button_tab_header"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+		 	android:textColor="#FFFFFF"
+			android:textSize="15sp"
+		   	android:text="Atras"  />
+	
+	</RelativeLayout> 
+
+	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+		android:gravity="center_horizontal|center_vertical"
+		android:padding="7dip"
+    	android:orientation="horizontal" >
+		
+		<LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+			android:gravity="center_horizontal|center_vertical"
+			android:layout_weight="0.3333"
+	    	android:orientation="vertical" >
+    	
+			<ImageView  
+    			android:id="@+id/okImage"
+				android:layout_width="20dp"
+			 	android:layout_height="20dp" 
+			 	android:src="@drawable/ok"  />
+		    		
+			<TextView
+				android:textColor="#545454"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			 	android:gravity="center_horizontal|center_vertical"
+				android:textSize="10sp"  
+				android:text="Transacción Exitosa"/> 
+		
+		</LinearLayout>
+		
+		<LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+			android:gravity="center_horizontal|center_vertical"
+			android:layout_weight="0.3333"
+	    	android:orientation="vertical" >
+		       
+			<ImageView  
+    			android:id="@+id/undoImage"
+				android:layout_width="20dp"
+			 	android:layout_height="20dp" 
+			 	android:src="@drawable/undo"  />
+		    		
+			<TextView
+				android:textColor="#545454"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			 	android:gravity="center_horizontal|center_vertical"
+				android:textSize="10sp"  
+				android:text="Transacción Fallida"/> 
+		
+		</LinearLayout>
+		
+		<LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+			android:gravity="center_horizontal|center_vertical"
+			android:layout_weight="0.3333"
+	    	android:orientation="vertical" >
+		       
+			<ImageView  
+    			android:id="@+id/cancelImage"
+				android:layout_width="20dp"
+			 	android:layout_height="20dp" 
+			 	android:src="@drawable/cancel" />
+		    		
+			<TextView
+				android:textColor="#545454"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+			 	android:gravity="center_horizontal|center_vertical"
+				android:textSize="10sp"  
+				android:text="Transacción Reversada"/> 
+		
+		</LinearLayout>
+	
+	</LinearLayout> 
+	
+    <View  
+        android:background="@color/blue"
+    	android:layout_width="fill_parent"
+    	android:layout_height="3dp" />
+
+	<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+     	android:gravity="center_vertical"
+    	android:orientation="vertical" >
+
+       <ListView
+        	android:id="@android:id/list"
+       		android:layout_width="fill_parent"
+        	android:layout_height="fill_parent" 
+        	android:fadeScrollbars="false"
+        	android:listSelector="@android:color/transparent"
+    		android:divider="#ED2117"
+    		android:dividerHeight="0px"
+    		android:stackFromBottom="true"
+			android:transcriptMode="alwaysScroll"
+        	android:drawSelectorOnTop="false" />
+	
+	</LinearLayout>
+
+</LinearLayout>

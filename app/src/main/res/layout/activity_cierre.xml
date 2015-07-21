@@ -1,0 +1,314 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".CierreActivity"
+	android:background="#FFFFFF"
+    android:orientation="vertical">
+
+	<LinearLayout
+    	android:id="@+id/top_header"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+     	android:gravity="center_horizontal"
+    	android:orientation="vertical"
+   		android:background="@drawable/header_tabs"
+      	android:padding="10dip">
+	    		
+		<TextView
+			android:textColor="#ffffff"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		 	android:gravity="center_horizontal|center_vertical"
+			android:textSize="25sp"
+    		android:textStyle="bold"
+			android:text="Cierre"  />
+	
+	</LinearLayout>
+
+	<RelativeLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+   		android:background="#FFFFFF"
+      	android:padding="5dip">
+	    		
+		<TextView 
+		    android:id="@+id/textoTotal"
+			android:textColor="@color/black"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+        	android:layout_centerVertical="true"
+        	android:layout_marginLeft="5dp"
+			android:textSize="23dp" 
+			android:text="Total: "  />
+	    		
+		<TextView
+		    android:id="@+id/totalGeneral"
+			android:textColor="@color/black"
+			android:layout_toRightOf="@+id/textoTotal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+        	android:layout_centerVertical="true"
+			android:textSize="25dp"
+    		android:textStyle="bold" />
+			
+		<Button
+	    	android:id="@+id/cierreButton"
+	      	android:background="@drawable/button_cierre"
+			android:gravity="right"
+       	 	android:layout_alignParentRight="true"
+    		android:textStyle="bold"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textColor="#FFFFFF"
+			android:textSize="15sp"
+		  	android:text="Realizar Cierre"  />
+	
+	</RelativeLayout>
+	<View 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="3dip"
+		android:background="@color/blue" />
+	
+	<ScrollView 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+    	android:orientation="vertical">
+	
+	<!-- MAESTRO -->
+	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+		android:background="@color/lightblue"
+		android:padding="5dp"
+    	android:orientation="horizontal">
+		       
+		<ImageView  
+			android:layout_width="60dp"
+			android:layout_height="40dp" 
+			android:src="@drawable/maestro" />
+	    		
+		<TextView
+			android:textColor="#FFFFFF"
+			android:layout_marginLeft="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:textSize="20sp" 
+    		android:textStyle="bold"
+			android:text="Maestro"  />
+	
+	</LinearLayout>
+	    		
+	<TextView
+     	android:id="@+id/noPoseeMaestro"
+		android:visibility="gone"
+		android:textColor="#525252" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:paddingTop="15dp"
+		android:paddingBottom="15dp"
+		android:paddingRight="10dp"
+		android:paddingLeft="10dp"
+		android:textSize="15sp" 
+		android:text="No posee transacciones para Maestro."  />
+
+	<ListView
+     	android:id="@+id/maestroList"
+   		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content" 
+     	android:listSelector="@android:color/transparent"
+    	android:divider="#ED2117"
+    	android:dividerHeight="0px"/> 
+	
+	<LinearLayout
+     	android:id="@+id/maestroTotalLayout"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"  
+		android:padding="10dp"
+   		android:background="@color/lightblack"
+    	android:orientation="horizontal">
+	    		
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			android:layout_weight="0.5"
+			android:gravity="left"
+			android:textSize="20sp"
+			android:text="Total Maestro"  />
+	    		
+		<TextView
+     		android:id="@+id/maestroTotal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			android:layout_weight="0.5"
+			android:gravity="right"
+			android:textSize="25sp"
+    		android:textStyle="bold"  />
+	
+	</LinearLayout> 
+	<!-- MASTERCARD -->
+	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+		android:background="@color/lightblue"
+		android:padding="5dp"
+    	android:orientation="horizontal">
+		       
+		<ImageView  
+			android:layout_width="60dp"
+			android:layout_height="40dp" 
+			android:src="@drawable/mastercard" />
+	    		
+		<TextView
+			android:textColor="#FFFFFF"
+			android:layout_marginLeft="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:textSize="20sp"
+    		android:textStyle="bold"
+			android:text="Mastercard"  />
+	
+	</LinearLayout>
+	    		
+	<TextView
+     	android:id="@+id/noPoseeMastercard"
+		android:visibility="gone"
+		android:textColor="#525252" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:paddingTop="15dp"
+		android:paddingBottom="15dp"
+		android:paddingRight="10dp"
+		android:paddingLeft="10dp"
+		android:textSize="15sp" 
+		android:text="No posee transacciones para Mastercard."  />
+    
+	<ListView
+     	android:id="@+id/mastercardList"
+   		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content" 
+      	android:fadeScrollbars="false"
+     	android:listSelector="@android:color/transparent"
+    	android:divider="#ED2117"
+    	android:dividerHeight="0px"
+		android:transcriptMode="alwaysScroll"
+      	android:drawSelectorOnTop="false" />
+       
+	<LinearLayout
+     	android:id="@+id/mastercardTotalLayout"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+		android:background="@color/lightblack"
+		android:padding="10dp"
+    	android:orientation="horizontal">
+	    		
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			android:layout_weight="0.5"
+			android:gravity="left"
+			android:textSize="20sp"
+			android:text="Total Mastercard"  />
+	    		
+		<TextView
+     		android:id="@+id/mastercardTotal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="@color/black"
+			android:layout_weight="0.5"
+			android:gravity="right"
+			android:textSize="25sp"
+    		android:textStyle="bold" />
+	
+	</LinearLayout>
+	
+	<!-- VISA -->
+	<LinearLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+		android:background="@color/lightblue"
+		android:padding="5dp"
+    	android:orientation="horizontal">
+		       
+		<ImageView  
+			android:layout_width="60dp"
+			android:layout_height="40dp" 
+			android:src="@drawable/visa" />
+	    		
+		<TextView
+			android:textColor="#FFFFFF"
+			android:layout_marginLeft="10dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:textSize="20sp"
+    		android:textStyle="bold"
+			android:text="Visa"  />
+	
+	</LinearLayout> 
+	
+	    		
+	<TextView
+     	android:id="@+id/noPoseeVisa"
+		android:visibility="gone"
+		android:textColor="#525252" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:paddingTop="15dp"
+		android:paddingBottom="15dp"
+		android:paddingRight="10dp"
+		android:paddingLeft="10dp"
+		android:textSize="15sp" 
+		android:text="No posee transacciones para Visa."  />
+
+	<ListView
+     	android:id="@+id/visaList"
+   		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content" 
+      	android:fadeScrollbars="false"
+     	android:listSelector="@android:color/transparent"
+    	android:divider="#ED2117"
+    	android:dividerHeight="0px"
+		android:transcriptMode="alwaysScroll"
+      	android:drawSelectorOnTop="false" />
+       
+		<LinearLayout
+			android:id="@+id/visaTotalLayout"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/lightblack"
+			android:padding="10dp"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/black"
+				android:layout_weight="0.5"
+				android:gravity="left"
+				android:textSize="20sp"
+				android:text="Total Visa"  />
+
+			<TextView
+				android:id="@+id/visaTotal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/black"
+				android:layout_weight="0.5"
+				android:gravity="right"
+				android:textSize="25sp"
+				android:textStyle="bold" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

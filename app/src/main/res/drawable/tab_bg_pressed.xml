@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- 
+	Copyright (c) Josh Clemm 2010
+	 -->
+	      
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:top="0dp" android:bottom="-3dp" android:left="-3dp" android:right="-3dp">   
+		<shape android:shape="rectangle">
+			<gradient android:startColor="#86D3FE" android:centerColor="#86D3FE"
+				android:endColor="#86D3FE" android:angle="-90" />
+		
+			<stroke android:width="4px" 
+			    android:color="@color/blue" />
+		</shape>
+	</item>      
+</layer-list> 
